@@ -42,7 +42,7 @@ const GROUP_MEMBERS = [
     url: "https://github.com/Seunoke0310",
   },
   {
-    name: "cry your cry()",
+    name: "cry your cry",
     url: "https://github.com/cryyourcry",
   },
 ];
