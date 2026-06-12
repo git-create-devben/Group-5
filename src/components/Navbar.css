@@ -1,0 +1,24 @@
+.navbar {
+  background: var(--navy);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar__logo-img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+}
