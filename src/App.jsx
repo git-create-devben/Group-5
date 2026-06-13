@@ -1,11 +1,26 @@
-// import React from "react";
+import "./styles/global.css";
 import "./App.css";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import MiddleSection from "./components/MiddleSection";
+import PlanetGrid from "./components/PlanetGrid";
+import DataTable from "./components/DataTable";
+import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Solar System Project Baseline Ready</h1>
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <MiddleSection />
+        <PlanetGrid />
+        <DataTable />
+        <ContactForm />
+      </main>
+      <Footer />
+    </>
   );
 }
 
