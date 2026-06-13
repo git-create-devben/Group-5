@@ -1,19 +1,12 @@
-import { useState, useRef } from "react";
-import "../styles/MiddleSection.css";
+import {  useRef } from "react";
+import "../components/MiddleSection.css";
 import videoSrc from "../assets/video.mp4";
 
 const MiddleSection = () => {
-  const [playing, setPlaying] = useState(false);
+  
   const videoRef = useRef(null);
 
-  const handleToggle = () => {
-    if (playing) {
-      videoRef.current.pause();
-    } else {
-      videoRef.current.play();
-    }
-    setPlaying((p) => !p);
-  };
+ 
 
   return (
     <section className="middle-section">
@@ -24,29 +17,13 @@ const MiddleSection = () => {
               ref={videoRef}
               src={videoSrc}
               playsInline
+              autoPlay
+              loop
+              muted
               style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "16px" }}
             />
 
-            <button
-              className={`video-play-btn${playing ? " video-play-btn--active" : ""}`}
-              aria-label="Play video"
-              onClick={handleToggle}
-            >
-              <span className="video-play-btn__ring video-play-btn__ring--1" />
-              <span className="video-play-btn__ring video-play-btn__ring--2" />
-              <span className="video-play-btn__icon">
-                {playing ? (
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-                    <rect x="5" y="4" width="4" height="16" rx="1" />
-                    <rect x="15" y="4" width="4" height="16" rx="1" />
-                  </svg>
-                ) : (
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M6 4.75a.75.75 0 0 1 1.14-.638l12 7.25a.75.75 0 0 1 0 1.276l-12 7.25A.75.75 0 0 1 6 19.25V4.75Z" />
-                  </svg>
-                )}
-              </span>
-            </button>
+           
           </div>
         </div>
 

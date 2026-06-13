@@ -1,0 +1,74 @@
+
+
+.middle-section {
+  background: var(--bg-white);
+  padding: 72px 0;
+  width: 100%;
+}
+
+.middle-section__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+}
+
+/* ── Video card ── */
+.middle-section__video-wrapper {
+  flex: 0 0 auto;
+}
+
+.middle-section__video-card {
+  position: relative;
+  width: 380px;
+  height: 380px;
+  border-radius: var(--radius);
+  background: var(--navy-dark);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-hover);
+}
+
+.middle-section__video-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--radius);
+}
+
+
+
+/* ── Text content ─ */
+.middle-section__content {
+  flex: 0 0 auto;
+  max-width: 460px;
+}
+
+.middle-section__title {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--blue);
+  line-height: 1.3;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.middle-section__body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  text-align: center;
+}
+
+.middle-section__highlight {
+  color: var(--blue);
+  font-weight: 600;
+}
