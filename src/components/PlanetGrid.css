@@ -1,0 +1,49 @@
+.planet-grid-section {
+  background: var(--bg-light);
+  padding: 80px 0;
+}
+
+.planet-grid__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.planet-grid__status {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.planet-grid__spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--border);
+  border-top-color: var(--blue);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.planet-grid__error {
+  color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+  .planet-grid__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .planet-grid__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
