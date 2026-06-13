@@ -1,5 +1,6 @@
 // Hero component - assigned to [member name]
 import "./Hero.css";
+import Image from "../assets/Image.png";
 
 function Hero() {
   const scrollToPlanets = () => {
@@ -35,8 +36,8 @@ function Hero() {
         </div>
         <div className="hero__image">
           <img
-            src="https://images.unsplash.com/photo-1614732414444-096e5f1122d5?w=600&q=80"
-            alt="Earth from space"
+            src={Image}
+            alt="Hero planet image"
             className="hero__planet-img"
           />
         </div>
