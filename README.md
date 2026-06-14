@@ -2,9 +2,25 @@
 
 ## 📌 Project Summary
 
-This project is a React-based web application that explores the solar system using real planetary data. It recreates a provided UI design and integrates dynamic data fetching, responsive layouts, and reusable components.
+A React-based web app that explores the solar system with real planetary data and a polished responsive UI. The project includes reusable components, interactive data presentation, and a styled landing page.
 
-The application includes features such as a planet data grid, a comparison table, a video section, and a validated contact form.
+### Built features
+
+- Planet data grid
+- Comparative planet table
+- Informational video section
+- Validated contact form
+- Responsive design for mobile, tablet, and desktop
+
+---
+
+## 📚 Table of Contents
+
+- [Project Summary](#project-summary)
+- [Team Members](#team-members)
+- [Components & Ownership](#components--ownership)
+- [How to Run Locally](#how-to-run-locally)
+- [Live Deployment](#live-deployment)
 
 ---
 
@@ -27,18 +43,19 @@ The application includes features such as a planet data grid, a comparison table
 
 ## 🧩 Components & Ownership
 
-| Component      | Description                                    | Built By |
-| -------------- | ---------------------------------------------- | -------- |
-| Navbar         | Navigation bar & Image assets                  | Damilola |
-| Hero           | Landing section                                | Munachi  |
-| MiddleSection  | Video and information section                  | Seun     |
-| PlanetGrid     | Displays planet data from API                  | Favour   |
-| PlanetCard     | Individual planet UI card                      | Rossi    |
-| DataTable      | Planet comparison table                        | Munachi  |
-| ContactForm    | Form with validation                           | Munachi  |
-| Footer         | Footer section                                 | Munachi  |
-| Global CSS     | Base styles and layout styling                 | Zulaihat |
-| Responsiveness | Mobile, tablet, and desktop layout adjustments | Daniel   |
+| Component      | Description                                               | Built By      |
+| -------------- | --------------------------------------------------------- | ------------- |
+| Navbar         | Navigation and top image assets                           | Damilola      |
+| Hero           | Landing section with main call-to-action                  | Munachi       |
+| MiddleSection  | Video and details section                                 | Seun          |
+| PlanetGrid     | API (Favour), JSX structure (Victor), CSS styling (Rossi) | Collaborative |
+| PlanetCard     | Individual planet display card                            | Rossi         |
+| DataTable      | Comparison table                                          | Munachi       |
+| ContactForm    | Validated contact form                                    | Munachi       |
+| Footer         | Footer content                                            | Munachi       |
+| Global CSS     | Base styling and theme                                    | Zulaihat      |
+| Responsiveness | Adaptive layout for all screen sizes                      | Daniel        |
+| Git workflow   | Repository integration and merging                        | Khalid        |
 
 ---
 
@@ -51,8 +68,12 @@ npm install
 npm run dev
 ```
 
+Then open the local URL shown in your terminal.
+
 ---
 
 ## 🚀 Live Deployment
 
 🔗 https://your-deployment-link.com
+
+> Replace the above link with the actual deployed site URL when available.
