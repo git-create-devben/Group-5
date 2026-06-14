@@ -1,7 +1,8 @@
 import "./styles/global.css";
 import "./App.css";
-import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import MiddleSection from "./components/MiddleSection";
 import PlanetGrid from "./components/PlanetGrid";
 import DataTable from "./components/DataTable";
 import ContactForm from "./components/ContactForm";
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <MiddleSection />
         <PlanetGrid />
         <DataTable />
         <ContactForm />
